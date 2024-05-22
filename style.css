@@ -28,7 +28,7 @@
 .btn{
     text-align: center;
     padding: 4px;
-    background: linear-gradient(to bottom, white, Gainsboro);
+    background: linear-gradient(to bottom, rgb(202, 221, 26), rgb(53, 220, 15));
     border: none;
     margin-top:10px;
     width: 80px;
@@ -39,13 +39,27 @@
     padding: 10px;
     margin: 10px;
     border:2px solid rgb(22, 19, 19);
-    color: rgb(243, 17, 28);
+    color: rgb(163, 212, 28);
     background: linear-gradient(to bottom, white, Gainsboro);
 }
 .showText{
     display: none;
 }
 
-.inactive{
+.inActive{
     display: none;
+}
+.btn2{
+    text-align: center;
+    padding: 4px;
+    background: linear-gradient(to bottom, rgb(8, 202, 137), rgb(79, 137, 123));
+    border: none;
+    margin-top:10px;
+    width: 80px;
+    border-radius: 4px;
+    margin-left: 40%;
+
+}
+.scoreText{
+    
 }

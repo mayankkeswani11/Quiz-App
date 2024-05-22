@@ -63,7 +63,11 @@ let userAnswerSelected = () => {
   });
   return ans;
 };
-
+let diSelectAll = () => {
+  answers.forEach((element) => {
+    element.checked = false;
+  });
+};
 let score = 0;
 btnClick.addEventListener("click", () => {
   let checkAnswer = userAnswerSelected();
@@ -73,12 +77,13 @@ btnClick.addEventListener("click", () => {
       console.log("score incremented");
     }
     count++;
+    diSelectAll();
     if (count < quiz.length) {
       load_data();
     } else {
       showResult.innerHTML = `
-        <h2>Your Score is ${score}/${quiz.length}</h2>
-        <button class="btn" onclick="location.reload()">Play Again</button>
+        <h2 class="scoreText">Your Score is ${score}/${quiz.length}</h2>
+        <button class="btn2" onclick="location.reload()">Play Again</button>
         `;
       showResult.classList.remove("showText");
     }
